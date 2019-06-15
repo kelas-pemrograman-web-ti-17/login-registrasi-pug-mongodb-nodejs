@@ -27,7 +27,6 @@ User.find({username:'superadmin'}, function (err, user){
 
         admin.save(function(err) {
             if (err) throw err;
-
             console.log('Admin is created!');
         });
     }
