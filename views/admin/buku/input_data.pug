@@ -1,0 +1,57 @@
+include  ../../admin/index
+// Content Wrapper. Contains page content
+.content-wrapper
+    // Content Header (Page header)
+    section.content-header
+        h1
+            | Data Buku
+        ol.breadcrumb
+            li
+                a(href='#')
+                    i.fa.fa-dashboard
+                    |  Home
+            li
+                a(href='#') Tables
+            li.active Data tables
+    // Main content
+    section.content
+        .row
+            .col-xs-12
+                // /.box-body
+                // /.box
+                .box
+                    .box-body
+                        .box.box-info
+                            .box-header.with-border
+                                h3.box-title Input data buku
+                            // /.box-header
+                            // form start
+                            form.form-horizontal(method="post", action="/inputbuku", role='form')
+                                .box-body
+                                    .form-group
+                                        label.col-sm-2.control-label(for='kodebuku') Kode Buku
+                                        .col-sm-10
+                                            input#kodebuku.form-control(type='text' name="kodebuku" placeholder='Kode Buku')
+                                    .form-group
+                                        label.col-sm-2.control-label(for='judul') Judul Buku
+                                        .col-sm-10
+                                            input#judul.form-control(type='text' name="judulbuku" placeholder='Judul Buku')
+                                    .form-group
+                                        label.col-sm-2.control-label(for='sinopsis') Sinopsis
+                                        .col-sm-10
+                                            input#sinopsis.form-control(type='text' name="sinopsis" placeholder='Sinopsis')
+                                    .form-group
+                                        label.col-sm-2.control-label(for='pengarang') Pengarang
+                                        .col-sm-10
+                                            input#pengarang.form-control(type='text' name="pengarang" placeholder='Pengarang')
+                                    .form-group
+                                        label.col-sm-2.control-label(for='harga') Harga
+                                        .col-sm-10
+                                            input#harga.form-control(type='text' name="harga" placeholder='Harga')
+
+
+                                // /.box-body
+                                .box-footer
+                                    button.btn.btn-info.pull-right(type='submit') Input Data
+                                // /.box-footer
+
