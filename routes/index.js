@@ -42,6 +42,7 @@ router.post('/login', function(req, res, next) {
                 session_store.username = user[0].username
                 session_store.email = user[0].email
                 session_store.admin = user[0].admin
+                session_store.firstname = user[0].firstname
                 session_store.logged_in = true
                 if(user[0].admin == true){
                     res.redirect('/admin')

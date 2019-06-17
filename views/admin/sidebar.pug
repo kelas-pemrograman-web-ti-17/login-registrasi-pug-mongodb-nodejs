@@ -12,8 +12,8 @@ aside.main-sidebar
                     |  Online
         ul.sidebar-menu(data-widget='tree')
             li.header MAIN NAVIGATION
-                li.active.treeview
-                    a(href='#')
+                li.treeview
+                    a(href='/')
                         i.fa.fa-dashboard
                         span Dashboard
                 if(session_store.admin == true)
@@ -25,11 +25,11 @@ aside.main-sidebar
                                 i.fa.fa-angle-left.pull-right
                         ul.treeview-menu
                             li
-                                a(href='pages/UI/general.html')
+                                a(href='/inputbuku')
                                     i.fa.fa-circle-o
                                     |  Input Data Buku
                             li
-                                a(href='pages/UI/icons.html')
+                                a(href='/databuku')
                                     i.fa.fa-circle-o
                                     |  Lihat Data Buku
                 else
@@ -41,7 +41,7 @@ aside.main-sidebar
                                 i.fa.fa-angle-left.pull-right
                         ul.treeview-menu
                             li
-                                a(href='pages/UI/icons.html')
+                                a(href='/databukumember')
                                     i.fa.fa-circle-o
                                     |  Lihat Data Buku
 
